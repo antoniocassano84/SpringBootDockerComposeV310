@@ -3,6 +3,7 @@ version: '3.1'
 services:
   db:
     image: postgres
+    container_name: springBootPsql
     restart: always
     ports:
       - "5432:5432"
@@ -10,3 +11,7 @@ services:
       POSTGRES_USERNAME: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: blogDC
+    volumes:
+      - data:/var/lib/postgresql/data
+volumes:
+  data:
