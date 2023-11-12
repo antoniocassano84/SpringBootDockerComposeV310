@@ -10,7 +10,7 @@ services:
     environment:
       POSTGRES_USERNAME: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: blogDC
+      POSTGRES_DB: blogdc
     volumes:
       - data:/var/lib/postgresql/data
 volumes:
