@@ -10,13 +10,15 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class Application {
 
+	// sudo systemctl stop postgresql
+	// docker compose up
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
 
-	@Bean
-	CommandLineRunner commandLineRunner(PostRepository repository) {
-		return args -> repository.save(new Post("title2", "body22"));
-	}
+//	@Bean
+//	CommandLineRunner commandLineRunner(PostRepository repository) {
+//		return args -> repository.save(new Post("title2", "body22"));
+//	}
 
 }
